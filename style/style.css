@@ -1,0 +1,115 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+
+#root {
+	width: 450px;
+	margin: 0 auto;
+}
+
+#counter {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	position: sticky;
+	top: 0;
+}
+
+div#counter>div {
+	height: 60px;
+	text-align: center;
+	justify-content: center;
+	font-size: 30px;
+	padding: 25px 10px 0;
+	color: white;
+}
+
+.counter_done {
+	background-color: #27AE60;
+}
+
+.counter_cancel{
+	background-color: #E74C3C;
+}
+
+#form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#form input {
+	width: 70%;
+	margin-top: 20px;
+	font-size: 25px;
+	padding: 2%;
+}
+
+.name_deal {
+	font-size: 30px;
+}
+
+#form button {
+	padding: 2%;
+	margin: 20px 0;
+	width: 74%;
+	border: 2px solid orange;
+	background-color: white;
+	font-size: 25px;
+	color: orange;
+	transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#form button:hover{
+	cursor: pointer;
+	background-color: orange;
+	color: black;
+}
+
+div #cards {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 30px;
+}
+
+div #cards .card{
+	display: grid;
+	grid-template-columns: 6fr 1fr;
+	grid-auto-rows: auto;
+	width: 100%;
+	background-color: #34495E;
+	font-size: 20px;
+	color: white;
+	margin-top: 15px;
+}
+
+div.card p {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+div #cards .card div {
+	width: 100%;
+	height: 60px;
+	font-size: 40px;
+	text-align: center;
+	color: black;
+	transition: color 0.5s ease;
+}
+
+div #cards .card div:hover {
+	cursor: pointer;
+	color: white;
+}
+
+div .ok {
+	background-color: #27AE60;
+}
+
+div .NoOk {
+	background-color: #E74C3C;
+}
