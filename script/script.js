@@ -63,10 +63,10 @@ function render (list_cards){
     btnNO.innerText = '✖';
     
   }
-  save_data(sheetDeal, stOK, stNO);
+  save_data(sheetDeal, stOK, stNO, st);
 };
 
-function save_data (arg, st_ok, st_no) {
+function save_data (arg, st_ok, st_no, s_t) {
   if (arg.length === 0){
     localStorage.removeItem('sheet_Deal');
   }else{
@@ -74,6 +74,7 @@ function save_data (arg, st_ok, st_no) {
   };
   localStorage.setItem('st_ok', st_ok);
   localStorage.setItem('st_no', st_no);
+  localStorege.setItem('s_t', s_t);
 }
 
 function set_data (){
