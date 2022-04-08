@@ -7,7 +7,7 @@ const elemNO = document.querySelector('.counter_cancel')
 let sheetDeal = [];
 let st = 0;
 let stOK = 0;
-let stNO =0;
+let stNO = 0;
 
 formAddElem.addEventListener('submit', event => {
   event.preventDefault();
@@ -37,7 +37,7 @@ function render (list_cards){
     const btnNO = document.createElement('div');
 
     btnOK.addEventListener('click', () => {
-      sheetDeal = sheetDeal.filter(elem => elem.id !==list_cards[i].id);
+      sheetDeal = sheetDeal.filter(elem => elem.id !== list_cards[i].id);
       stOK++
       elemOK.innerText = `Сделано ${stOK}`;
       render(sheetDeal);
@@ -63,6 +63,7 @@ function render (list_cards){
     btnNO.innerText = '✖';
     
   }
+  
   save_data(sheetDeal, stOK, stNO, st);
 };
 
@@ -97,6 +98,9 @@ function set_data (){
     
     if (sh_Deal !== null){
       sheetDeal = sh_Deal;
+  };
+    if (st !== null){
+      st = 0;
   };
 };
 
