@@ -64,10 +64,10 @@ function render (list_cards){
     
   }
   
-  save_data(sheetDeal, stOK, stNO);
+  save_data(sheetDeal, stOK, stNO, st);
 };
 
-function save_data (arg, st_ok, st_no) {
+function save_data (arg, st_ok, st_no, st_st) {
   if (arg.length === 0){
     localStorage.removeItem('sheet_Deal');
   }else{
@@ -75,11 +75,15 @@ function save_data (arg, st_ok, st_no) {
   };
   localStorage.setItem('st_ok', st_ok);
   localStorage.setItem('st_no', st_no);
+  localStorage.setItem('st_st', st_st);
+  console.log(st_st);
 }
 
 function set_data (){
     stOK = localStorage.getItem('st_ok');
     stNO = localStorage.getItem('st_no');
+    st = localStorage.getItem('st_st');
+    
     let sh_Deal = JSON.parse(localStorage.getItem('sheet_Deal'))
     
     if (stOK === null){
