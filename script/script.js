@@ -80,6 +80,7 @@ function save_data (arg, st_ok, st_no, s_t) {
 function set_data (){
     stOK = localStorage.getItem('st_ok');
     stNO = localStorage.getItem('st_no');
+    st = localStorege.getItem('s_t');
     let sh_Deal = JSON.parse(localStorage.getItem('sheet_Deal'))
     
     if (stOK === null){
