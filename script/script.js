@@ -76,7 +76,6 @@ function save_data (arg, st_ok, st_no, st_st) {
   localStorage.setItem('st_ok', st_ok);
   localStorage.setItem('st_no', st_no);
   localStorage.setItem('st_st', st_st);
-  console.log(st_st);
 }
 
 function set_data (){
